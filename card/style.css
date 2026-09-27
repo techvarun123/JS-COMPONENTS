@@ -1,5 +1,8 @@
 #fileinp{
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
 #btn{
@@ -148,7 +151,9 @@ button:hover {
     padding:20px;
    display: none;
 }
-
+.card{
+    display: flex;
+}
 #img {
     border: 2px;
     display: flex;

@@ -57,9 +57,48 @@ fileinp.addEventListener("change",function(desc){
   profileImage.src = URL.createObjectURL(selectedFile);
 })
 
-let form = document.querySelector("form")
+let card = document.querySelector("#card");
+let form = document.querySelector("form");
 let submitbtn =document.querySelector("#submit");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  form.querySelectorAll("input, textarea, button").forEach(function (field) {
+  field.disabled = true;
+}); 
   card.style.display = "flex";
 });
+
+// we use for each to take input and output tocard 
+
+// let form = document.querySelector("form");
+
+// let inputs = [
+//     document.querySelector("#username"),
+//     document.querySelector("#userRole"),
+//     document.querySelector("#phoneno"),
+//     document.querySelector("#email"),
+//     document.querySelector("#address")
+// ];
+
+// let cards = [
+//     document.querySelector("#name"),
+//     document.querySelector("#cardrole"),
+//     document.querySelector("#cardphone"),
+//     document.querySelector("#cardemail"),
+//     document.querySelector("#cardaddress")
+// ];
+
+// form.addEventListener("submit", function(event) {
+
+//     event.preventDefault();
+
+//     inputs.forEach(function(input, index) {
+
+//         cards[index].textContent = input.value;
+
+//     });
+//     card.style.display = "flex";
+// });
+
+
+

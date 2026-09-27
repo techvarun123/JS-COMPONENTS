@@ -32,7 +32,7 @@
         <br>
         <div style="display:flex; gap:30px;  "  >  
         <label for="profile" id="profile"><b>PROFILE</b></label>
-        <input type="file" id="fileinp" required>
+        <input type="file" id="fileinp" name="profile" required>
         <div id="btn">UPLOAD PIC</div>
         </div>  
         <BR>
@@ -42,25 +42,29 @@
         </div>
     <div id="card">
         <div id="img"><img ></div>
-        <div id="info"> 
-          <div id="name">NAME</div>
-          <div id="cardrole">ROLE</div>
-        <hr/>
-       <div style="display: flex;">
-            <i class="fa-solid fa-venus-mars"></i>
-            <p id="cardgender"> </p>
-       </div>
-<div style="display: flex;">
-    <i class="fa-solid fa-phone"></i>
-    <p id="cardphone"></p>
+<div id="info"> 
+<div  class="card"> 
+        <p id="name">NAME</p>
+</div>
+<div class="card" id="crole">
+        <p id="cardrole">ROLE</p>
+</div>
+<hr/>
+<div class="card" id="gen">
+        <i class="fa-solid fa-venus-mars"></i>
+        <p id="cardgender"> </p>
+</div>
+<div class="card" id="ph">
+        <i class="fa-solid fa-phone"></i>
+        <p id="cardphone"></p>
 </div>
 
-<div   style="display: flex;">
+<div  class="card" id="cardem">
     <i class="fa-solid fa-envelope"></i>
     <p id="cardemail"></p>
 </div>
 
-<div  style="display: flex; ">
+<div  class="card" id="add">
     <i class="fa-solid fa-location-dot"></i>
     <p id="cardaddress"></p>
 </div>
