@@ -1,0 +1,187 @@
+#fileinp{
+    display: none;
+}
+
+#btn{
+    border:2px solid black;
+    padding:5px;
+    background-color: transparent;
+   width: 200px;
+}
+
+#btn:hover{
+    border:2px solid black;
+    padding:5px;
+    background-color: rgb(68, 68, 101);
+    
+}
+
+
+
+#container {
+    display: flex;
+    justify-content: space-evenly; /* Centers items horizontally next to each other */
+    align-items: center;     /* Centers items vertically */
+    gap: 30px;               /* Adds clean spacing between the cards */
+    height: 100vh;
+    width: 100vw;            /* Fixed typo: changed 'wh' to 'vw' */
+}
+
+/* css property of form */
+
+/* Remove default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+form {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Normal labels */
+form > label {
+    display: inline-block;
+    width: 90px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Text, number and email inputs */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 240px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Gender section */
+input[type="radio"] {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Gender labels */
+input[type="radio"] + label {
+    width: auto;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+/* Address */
+textarea {
+    height: 80px;
+    resize: vertical;
+    vertical-align: top;
+}
+
+/* File input */
+input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Upload button */
+button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background: #0056b3;
+}
+
+/* css for card */
+#card{
+    height: 230px;
+    width: 380px;
+    
+    border: 1px solid ;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start; 
+    align-items: center;     
+    padding:20px;
+   display: none;
+}
+#img{
+    border: 1px solid;
+    height:100px;
+   width: 100px;
+    border-radius: 50%;
+    margin-right:20px ;
+   overflow: hidden;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+#info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#info i{
+    color:rgb(84, 80, 80);
+    margin-right:8px;
+
+
+}
+ #name{
+     width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+
+}
+#cardrole{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(37, 35, 35);
+}

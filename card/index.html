@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+</head>
+<body>
+    <div id="container">
+        <div>
+      <form>
+        <!-- 1. Paired label 'for' with input 'id' -->
+        <label for="username">NAME:</label>
+        <input id="username" type="text">
+        <br>
+        
+        <label for="role">ROLE:</label>
+        <input id="role" type="text">
+        <br>
+        
+        <label id=>GENDER:</label>
+        <input id="male" name="gender" type="radio" value="MALE" ><label for="male">MALE</label>
+        <input id="female" name="gender" type="radio" value="FEMALE"><label for="female">FEMALE</label>
+        <br>
+        <label for="phoneno">PHONE NO.</label> <input id="phoneno" type="tel" inputmode="tel" autocomplete="tel" required>
+        <br> 
+        <label for="email">GMAIL</label><input id="email" type="email">
+        <br>
+         <label for="add">ADDRESS</label>
+        <textarea id="add"></textarea>
+        <br>
+        <div style="display:flex; gap:30px   " >  
+        <label for="email">PROFILE</label>
+        <input type="file" id="fileinp">
+        <div id="btn">UPLOAD PIC</div>
+        </div>  
+        <BR>
+            <BR>
+        <button id="submit">SUBMIT</button>
+    </form> 
+        </div>
+    <div id="card">
+        <div id="img"><img ></div>
+        <div id="info"> 
+          <div id="name">NAME</div>
+          <div id="cardrole">ROLE</div>
+        <hr/>
+       <div style="display: flex;">
+            <i class="fa-solid fa-venus-mars"></i>
+            <p id="cardgender"> </p>
+       </div>
+<div style="display: flex;">
+    <i class="fa-solid fa-phone"></i>
+    <p id="cardphone"></p>
+</div>
+
+<div   style="display: flex;">
+    <i class="fa-solid fa-envelope"></i>
+    <p id="cardemail"></p>
+</div>
+
+<div  style="display: flex; ">
+    <i class="fa-solid fa-location-dot"></i>
+    <p id="cardaddress"></p>
+</div>
+        </div>
+         </div>
+       
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
