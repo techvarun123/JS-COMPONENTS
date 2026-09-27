@@ -59,7 +59,7 @@ form {
 /* Normal labels */
 form > label {
     display: inline-block;
-    width: 90px;
+    width: 95px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -115,8 +115,10 @@ input[type="file"] {
     width: 100%;
 }
 
+/* font */
 /* Upload button */
 button {
+    font-weight: lighter;
     width: 100%;
     padding: 11px;
     border: none;
@@ -135,7 +137,7 @@ button:hover {
 /* css for card */
 #card{
     height: 230px;
-    width: 380px;
+    max-width: 400px;
     
     border: 1px solid ;
     display: flex;
@@ -146,10 +148,14 @@ button:hover {
     padding:20px;
    display: none;
 }
-#img{
-    border: 1px solid;
-    height:100px;
-   width: 100px;
+
+#img {
+    border: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:120px;
+    min-width: 120px;
     border-radius: 50%;
     margin-right:20px ;
    overflow: hidden;

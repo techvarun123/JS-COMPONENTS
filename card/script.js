@@ -40,13 +40,6 @@ add.addEventListener("input",function(event){
 cardadd.textContent=event.target.value;
 
 });
-let card = document.querySelector("#card")
-let submitbtn =document.querySelector("#submit");
-submitbtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  card.style.display = "flex";
-});
-
 let fileinp =document.querySelector("#fileinp");
 let fileinp2 = document.querySelector("#fileinp2");
 let btn =  document.querySelector("#btn");
@@ -63,3 +56,10 @@ fileinp.addEventListener("change",function(desc){
   const profileImage = document.querySelector("#img img");
   profileImage.src = URL.createObjectURL(selectedFile);
 })
+
+let form = document.querySelector("form")
+let submitbtn =document.querySelector("#submit");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  card.style.display = "flex";
+});

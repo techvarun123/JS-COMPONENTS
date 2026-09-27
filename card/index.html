@@ -14,32 +14,30 @@
       <form>
         <!-- 1. Paired label 'for' with input 'id' -->
         <label for="username">NAME:</label>
-        <input id="username" type="text">
+        <input id="username" type="text" required>
         <br>
-        
-        <label for="role">ROLE:</label>
-        <input id="role" type="text">
+        <label for="role">Designation:</label>
+        <input id="role" type="text" required>
         <br>
-        
         <label id=>GENDER:</label>
-        <input id="male" name="gender" type="radio" value="MALE" ><label for="male">MALE</label>
+        <input id="male" name="gender" type="radio" value="MALE" required><label for="male">MALE</label>
         <input id="female" name="gender" type="radio" value="FEMALE"><label for="female">FEMALE</label>
         <br>
-        <label for="phoneno">PHONE NO.</label> <input id="phoneno" type="tel" inputmode="tel" autocomplete="tel" required>
-        <br> 
-        <label for="email">GMAIL</label><input id="email" type="email">
+        <label for="phoneno">PHONE NO.</label> <input id="phoneno" type="number" inputmode="tel" autocomplete="tel" required>
+        <br>    
+        <label for="email">GMAIL</label><input id="email" type="email" required>
         <br>
          <label for="add">ADDRESS</label>
-        <textarea id="add"></textarea>
+        <textarea id="add" required></textarea>
         <br>
-        <div style="display:flex; gap:30px   " >  
-        <label for="email">PROFILE</label>
-        <input type="file" id="fileinp">
+        <div style="display:flex; gap:30px;  "  >  
+        <label for="profile" id="profile"><b>PROFILE</b></label>
+        <input type="file" id="fileinp" required>
         <div id="btn">UPLOAD PIC</div>
         </div>  
         <BR>
             <BR>
-        <button id="submit">SUBMIT</button>
+        <button id="submit" type="submit">SUBMIT</button>
     </form> 
         </div>
     <div id="card">
