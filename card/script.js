@@ -46,10 +46,8 @@ let btn =  document.querySelector("#btn");
 let btn2 =  document.querySelector("#btn2");
 
 btn.addEventListener("click",function(){
-        fileinp.click();
-        
+        fileinp.click();     
 })
-
 fileinp.addEventListener("change",function(desc){
   const selectedFile = desc.target.files[0];
   btn.textContent = selectedFile.name;
